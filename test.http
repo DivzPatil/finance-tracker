@@ -1,0 +1,15 @@
+### Test Root
+GET http://localhost:5000/
+
+### Insert Transaction
+POST http://localhost:5000/add
+Content-Type: application/json
+
+{
+  "description": "Groceries",
+  "amount": 1200,
+  "type": "expense"
+}
+
+### Get All Transactions
+GET http://localhost:5000/transactions
